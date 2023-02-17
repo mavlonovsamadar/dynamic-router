@@ -26,7 +26,7 @@ const About = () => {
             <>
                 <Container>
                     <Row className='justify-content-center mt-5'>
-                        <Col xs={4}>
+                        
                         <Form.Control placeholder="Search Names" onChange={(e)=> setValue(e.target.value)}/>
     
                         {user.filter((res)=>{
@@ -35,6 +35,7 @@ const About = () => {
                         }).map((data)=>{
                             return(
                             <>
+                            <Col xs={4}>
                                 <Card style={{width: "150px" }}>
                                      <Card.Img variant="top" src={img} style={{height: "140px", width: "120px" }}/>
                                     <Card.Body>
@@ -43,11 +44,12 @@ const About = () => {
                                         </Card.Title>
                                     </Card.Body>
                                 </Card>
+                                </Col>
                             </>
                             )
                         })}
                        
-                        </Col>
+                        
                     </Row>
                 </Container>
             </>
