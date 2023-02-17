@@ -35,9 +35,9 @@ const About = () => {
                         }).map((data)=>{
                             return(
                             <>
-                            <Col xs={4}>
-                                <Card style={{width: "150px" }}>
-                                     <Card.Img variant="top" src={img} style={{height: "140px", width: "120px" }}/>
+                            <Col xs={3}>
+                                <Card >
+                                     <Card.Img variant="top" src={img} />
                                     <Card.Body>
                                         <Card.Title>
                                              {data.name}
